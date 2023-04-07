@@ -1,5 +1,5 @@
 {
-  "name": "apitestsdemo",
+  "name": "expressJsApiTestsSample",
   "version": "1.0.0",
   "description": "express js app & associated tests demo",
   "main": "index.js",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/sebpam/expressJsApiTestsSample/issues"
   },
-  "homepage": "https://github.com/sebpam/expressJsApiTestsSample#readme"
+  "homepage": "https://github.com/sebpam/expressJsApiTestsSample#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
