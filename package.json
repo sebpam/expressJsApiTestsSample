@@ -1,0 +1,19 @@
+{
+  "name": "apitestsdemo",
+  "version": "1.0.0",
+  "description": "express js app & associated tests demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebpam/expressJsApiTestsSample.git"
+  },
+  "author": "Sebastien G Pambu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebpam/expressJsApiTestsSample/issues"
+  },
+  "homepage": "https://github.com/sebpam/expressJsApiTestsSample#readme"
+}
