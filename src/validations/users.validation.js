@@ -1,6 +1,8 @@
-const { body } = require("express-validator");
+const { body, header } = require("express-validator");
 const {createMySqlPool} = require("../util/dbClient");
-const {getEmailCount} = require("../util/queries");
+const {getEmailCount, verifyUser} = require("../util/queries");
+const jwt = require('jsonwebtoken');
+const jwtSecretKey = "abcd96587";
 module.exports = {
 
 	validateInputs: [
@@ -39,5 +41,26 @@ module.exports = {
             .withMessage("Gender should be string")
             .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/, "i")
             .withMessage("The password should be at least 8 char long, one uppercase, one lowercase, one special character")
+    ],
+
+    authenticateUser:[
+        body("email")
+            .exists({ checkFalsy: true })
+            .withMessage("email is required"),
+        body("password")
+            .exists({ checkFalsy: true })
+            .withMessage("password is required")
+            .custom( async (value, {req}) => {
+                let qr;
+                try{
+                    qr = await createMySqlPool.query(verifyUser(value, req))
+                } catch( e ){
+                    console.log( e )
+                }
+                if ( qr[0][0].userCount === 0 ) {
+                    throw new Error('User is not authorized')
+                }
+                return true
+            }),
     ]
 }

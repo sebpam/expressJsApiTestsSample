@@ -1,5 +1,7 @@
 const {createMySqlPool} = require("../util/dbClient");
 const {createUser} = require("../util/queries");
+const {secret} = require("../config/jwtSecretKey")
+const jwt = require('jsonwebtoken');
 module.exports = {
 	register: async (data) => {
 		let dbResult = {};
@@ -10,5 +12,8 @@ module.exports = {
             dbResult.error = e;
 		}
 		return dbResult;
-	}	
+	},	
+	getToken: (data)=>{
+        return jwt.sign(data, secret);
+	}
 }
