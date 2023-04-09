@@ -3,10 +3,22 @@ const app = express();
 const bodyParser = require("body-parser");
 const reportRoute = require("./routes/report.route");
 const usersRoute = require("./routes/users.route");
+const morganBody = require('morgan-body');
 const swaggerJsdoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
+const fs = require("fs");
+const path = require('path');
+
+const log = fs.createWriteStream(
+  path.join(__dirname, "logs", "access.log"), { flags: "a" }
+);
 
 app.use(bodyParser.json());
+morganBody(app, {
+  noColors: true,
+  stream: log,
+});
+
 app.use("/report", reportRoute);
 app.use("/users", usersRoute);
 

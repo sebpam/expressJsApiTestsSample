@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 const { secret } = require("../config/jwtSecretKey");
 module.exports = {
   verifyToken: (data) => {
-    console.log(data);
+    //console.log(data);
     let test;
     if (data.headers && data.headers.authorization) {
       try {

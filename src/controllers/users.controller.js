@@ -42,7 +42,6 @@ module.exports = {
           username: req.body.email,
           password: req.body.password,
         };
-
         const token = await getToken(data);
         res.status(200).send(token);
       }

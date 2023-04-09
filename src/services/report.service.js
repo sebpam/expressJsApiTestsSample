@@ -1,11 +1,14 @@
 const fs = require("fs");
+const rootDir = require("../../rootDir");
 module.exports = {
   getHtmlFileString: () => {
-    if (fs.existsSync(process.cwd() + "/src/services/tempReport.html")) {
+    if (fs.existsSync(rootDir() + "/reports/mochawesome.html")) {
       return fs
-        .readFileSync(process.cwd() + "/src/services/tempReport.html")
+        .readFileSync(rootDir() + "/reports/mochawesome.html")
         .toString();
     }
-    return "<h1>The report has not been published yet</h1>";
-  },
+    return fs
+        .readFileSync(rootDir() + "/reports/tempReport.html")
+        .toString();
+  }
 };

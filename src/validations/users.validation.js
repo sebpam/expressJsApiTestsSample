@@ -10,15 +10,15 @@ module.exports = {
       .withMessage("First name is a required field")
       .isString()
       .withMessage("First name should be a string")
-      .isLength({ min: 3 })
-      .withMessage("Last name should be at least 3 characters"),
+      .isLength({ min: 3, max: 30 })
+      .withMessage("Last name should be at least 3 characters and at most 30 characters"),
     body("lastName")
       .exists()
       .withMessage("Last name is a required field")
       .isString()
       .withMessage("Last name should be a string")
-      .isLength({ min: 3 })
-      .withMessage("Last name should be at least 5 characters"),
+      .isLength({ min: 3, max: 30 })
+      .withMessage("Last name should be at least 3 characters and at most 30 characters"),
     body("email")
       .exists()
       .isEmail()
@@ -39,7 +39,7 @@ module.exports = {
       }),
     body("password")
       .exists()
-      .withMessage("Gender should be string")
+      .withMessage("password is a required field")
       .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/, "i")
       .withMessage(
         "The password should be at least 8 char long, one uppercase, one lowercase, one special character"
