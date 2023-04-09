@@ -1,5 +1,8 @@
-const {register, getToken} = require("../controllers/users.controller");
-const {validateInputs, authenticateUser} = require("../validations/users.validation");
+const { register, getToken } = require("../controllers/users.controller");
+const {
+  validateInputs,
+  authenticateUser,
+} = require("../validations/users.validation");
 var express = require("express");
 
 var router = express.Router();
@@ -31,7 +34,7 @@ router.post("/getToken", authenticateUser, getToken);
  *                      type: string
  *                      minLength: 1
  *                      maxLength: 45
- *                  
+ *
  *      responses:
  *          '200':
  *              description: Succesful Authentication
