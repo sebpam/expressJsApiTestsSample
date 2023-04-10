@@ -4,7 +4,7 @@
   "description": "express js app & associated tests demo",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "npx nodemon index.js"
   },
   "repository": {
     "type": "git",

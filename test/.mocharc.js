@@ -13,7 +13,7 @@ module.exports = {
     reporter: './node_modules/mocha-multi-reporters',
     'reporter-options': 'configFile=./reporterOptions.json',
     slow: '75',
-    spec : ['./specs/*.ts'],
+    //spec : ["./specs/*/*.ts"],
     timeout: '60000',
     ui: 'bdd'
 };

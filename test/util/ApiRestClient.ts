@@ -1,6 +1,6 @@
-import * as request from 'supertest'
-import {User} from '../interfaces/User'
-import {Header} from '../interfaces/Header'
+import request from 'supertest'
+import { User } from '../interfaces/User'
+import { Header } from '../interfaces/Header'
 
 class ApiRestClient{
 

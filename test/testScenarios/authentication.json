@@ -1,0 +1,17 @@
+{
+	"invalidBearerToken":{ 
+		"data": {
+			"email":"existing"
+		},
+		"authorization": "bearer prooeoeoooro",
+		"errors":{
+			"type": "header",
+			"list": [
+			    {
+                    "msg": "User is not authorized",
+                    "param": "authorization"
+                }
+			]
+		}
+	}
+}

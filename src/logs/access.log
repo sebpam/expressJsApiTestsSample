@@ -52,3 +52,5996 @@ Response Body:
 <html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Mochawesome Report</title><style>/*! mochawesome-report-generator 6.2.0 | https://github.com/adamgruber/mochawesome-report-generator */
 :root{--screen-sm-min:768px;--screen-md-min:992px;--screen-lg-min:1200px;--grid-gutter-width:30px;--container-sm:calc(720px + var(--grid-gutter-width));--container-md:calc(940px + var(--grid-gutter-width));--container-lg:calc(1140px + var(--grid-gutter-width));--navbar-height:122px;--navbar-height-short:56px;--summary-height-stacked:82px;--statusbar-height-stacked:54px;--footer-height:60px;--default-transition-duration:0.2s;--default-transition-easing:ease;--gray-base:#000;--gray-darker-faded:color(var(--gray-darker) alpha(95%));--gray-darker:color(var(--gray-base) tint(13.5%));--gray-dark:color(var(--gray-base) tint(20%));--gray:color(var(--gray-base) tint(33.5%))
 Response: 200 6.006 ms 
+
+Request: POST //users/register at Sun Apr 09 2023 12:35:42 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response: 404 1.164 ms 
+
+Request: POST //users/register at Sun Apr 09 2023 12:36:16 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response: 404 0.914 ms 
+
+Request: POST //users/register at Sun Apr 09 2023 12:36:40 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response: 404 0.184 ms 
+
+Request: POST //users/register at Sun Apr 09 2023 12:37:12 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response: 404 0.088 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 12:37:44 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"erros": [
+		{
+			"value": "orkier",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 318.137 ms 
+
+Request: POST //users/register at Sun Apr 09 2023 12:38:44 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response: 404 0.207 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 12:40:47 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"erros": "User is not authorized"
+}
+Response: 401 3795.459 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 12:46:39 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"erros": [
+		{
+			"value": "orkier",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 222.337 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 12:46:50 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"erros": "User is not authorized"
+}
+Response: 401 330.105 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 12:48:09 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"erros": "User is not authorized"
+}
+Response: 401 201.649 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 12:49:13 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"erros": "User is not authorized"
+}
+Response: 401 184.070 ms 
+
+Request: GET / at Sun Apr 09 2023 12:52:00 GMT-0400, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+Response: 404 1.647 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 13:16:23 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"erros": "User is not authorized"
+}
+Response: 401 250.912 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 13:23:54 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 344.269 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 13:26:17 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 312.031 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 13:31:17 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 213.516 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 13:32:13 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 34.474 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 13:32:28 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 42.372 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 13:34:05 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 259.366 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 13:47:31 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 256.323 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 13:52:09 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 225.149 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 14:21:11 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 318.965 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 14:21:59 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 34.173 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 14:23:07 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 268.348 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 14:23:35 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 31.567 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 14:27:55 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Dell"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 287.643 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 14:28:55 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Timmothy",
+	"lastName": "Treutel",
+	"email": "Timmothy77@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 183.832 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 14:29:24 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Lucinda_Feest59@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized"
+		}
+	]
+}
+Response: 401 31.990 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 15:04:49 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Jerald73@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 356.078 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 15:05:08 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Henry_Koelpin86@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 320.581 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 15:21:11 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Rosario36@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 242.051 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 15:37:46 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"password": "loginlog",
+	"email": "email@mail.com"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE1OjM3OjQ2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJlbWFpbEBtYWlsLmNvbSIsInBhc3N3b3JkIjoibG9naW5sb2ciLCJpYXQiOjE2ODEwNjkwNjZ9.Z-Rf_NyVexDzme9SM0ZUKEwOPYjzVbZiUX2-s8bkUcE
+Response: 200 2080.516 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 15:42:40 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"password": "1234",
+	"email": "pambu76@hotmail.com"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE1OjQyOjQwIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDY5MzYwfQ.FmuX0sXTm9wWfFAvwGAMaRmTDPq63NKe81Xrnbhe4Yc
+Response: 200 221.358 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 16:08:23 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Gustave79@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 314.464 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 16:09:12 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Liza41@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 35.048 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 16:12:04 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Montana38@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 281.413 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 16:12:32 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Addison.Fay@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 33.913 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 16:15:27 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Ophelia.Jones77@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 189.453 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 16:17:01 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Providenci_Yundt75@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 193.292 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 16:40:57 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE2OjQwOjU3IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDcyODU3fQ.hER6WRteLVhhM67nttKF-e_15upfOAk4PSSJs8e0xj0
+Response: 200 260.056 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 16:41:43 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE2OjQxOjQzIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDcyOTAzfQ.LGGBz35bIP3D9cwBWsq0evRnun7Lhk2saiPFFMnl2G0
+Response: 200 33.006 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 16:41:54 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE2OjQxOjU0IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDcyOTE0fQ.G9GLFj6OnQWg0RB2Xfy8HmvGy5AHpsMFxKGuWpeT9N4
+Response: 200 33.672 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 16:47:42 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE2OjQ3OjQyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDczMjYyfQ.BSZKKoI9nW8HoKeHGaicW5MCyHubRPovRbZ7LYPJ5Rg
+Response: 200 550.800 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 16:48:02 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE2OjQ4OjAyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDczMjgyfQ.Y4aSYacnzN5lTWUosnJlhWXY7sqRU4_-KqsAQAyvpVU
+Response: 200 37.019 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 17:01:24 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE3OjAxOjI0IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDc0MDg0fQ.PoKrBS8beI2Gy7nKFIebCBTe2U0DpKcE8aDeVzm19U8
+Response: 200 276.427 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 17:05:44 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE3OjA1OjQ0IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDc0MzQ0fQ.OL4o6fwjzUd2OlWiDy_z3cw_sjUf4jQ17zp9VAnJARA
+Response: 200 151.169 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:05:44 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Lew_Cruickshank@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 32.158 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:06:48 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "orkier",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 367.189 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 17:08:03 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE3OjA4OjAzIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDc0NDgzfQ.axg6fQRY2RRa6t4JiWHTii5prdegs_iDNx3Xb0Ucnsc
+Response: 200 272.021 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:08:03 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Dejon.Weissnat95@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 30.056 ms 
+
+Request: POST /users/getToken at Sun Apr 09 2023 17:12:52 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU3VuIEFwciAwOSAyMDIzIDE3OjEyOjUyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMDc0NzcyfQ.Zop7JQCzKyyge_6obpHKdRtwucOcn7coDm_m8kR6F4c
+Response: 200 249.946 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:12:52 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Rafael_Wiegand@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 37.990 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:13:54 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Kitty.Lind9@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 212.214 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:30:16 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 752.483 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:31:36 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams101@email.com",
+	"password": "orkier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "orkier",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 244.488 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:32:20 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams101@email.com",
+	"password": "K2ooooor@"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "K2ooooor@",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 33.197 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:32:49 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams101@email.com",
+	"password": "K2ooooor$"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "K2ooooor$",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 30.045 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:34:44 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams101@email.com",
+	"password": "Kamkrier$"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "Kamkrier$",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 248.128 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:34:55 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams101@email.com",
+	"password": "Kamk_rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "Kamk_rier",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 31.568 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:37:02 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams101@email.com",
+	"password": "Kamk_rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "Kamk_rier",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 500.892 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:37:41 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams101@email.com",
+	"password": "Kamk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "Kamk@rier",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 39.150 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:38:10 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams101@email.com",
+	"password": "K1amk@rier"
+}
+Response: - - ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:38:20 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams101@email.com",
+	"password": "K1amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "sams101@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 210.558 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:38:45 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1012@email.com",
+	"password": "K1amk@rier"
+}
+Response: - - ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:38:47 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1012@email.com",
+	"password": "K1amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "sams1012@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 35.553 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:39:40 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1012333@email.com",
+	"password": "K1amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "sams1012333@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 246.068 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:42:59 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1012888@email.com",
+	"password": "K2amk@rier"
+}
+Response: - - ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:44:11 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1019999@email.com",
+	"password": "K3amk@rier"
+}
+Response: - - ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:44:32 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1019999@email.com",
+	"password": "K3amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "sams1019999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 182.105 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:51:35 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1777999@email.com",
+	"password": "K3amk@rier"
+}
+Response: - - ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:55:28 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1777999@email.com",
+	"password": "K3amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "sams1777999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 245.708 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:55:40 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1777999@email.com",
+	"password": "K3amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "sams1777999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 36.310 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 17:55:42 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "John",
+	"lastName": "Bolton",
+	"email": "sams1777999@email.com",
+	"password": "K3amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "sams1777999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 34.262 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 18:16:03 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnson",
+	"lastName": "Man",
+	"email": "samio887999@email.com",
+	"password": "K3amk@rier"
+}
+Response: - - ms 
+
+Request: POST /users/register at Sun Apr 09 2023 18:16:06 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnson",
+	"lastName": "Man",
+	"email": "samio887999@email.com",
+	"password": "K3amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "samio887999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 186.089 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 18:23:06 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnson",
+	"lastName": "Man",
+	"email": "samio817999@email.com",
+	"password": "K3amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "samio817999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 288.196 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 18:27:31 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnson",
+	"lastName": "Man",
+	"email": "samio447999@email.com",
+	"password": "K3amk@rier"
+}
+Response: - - ms 
+
+Request: POST /users/register at Sun Apr 09 2023 18:37:56 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "sprto447999@email.com",
+	"password": "Kyamk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "Kyamk@rier",
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase, one special character",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 297.232 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 18:38:05 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "sprto447999@email.com",
+	"password": "Ky1amk@rier"
+}
+Response Body:
+{
+	"success": 1,
+	"data": {
+		"fieldCount": 0,
+		"affectedRows": 1,
+		"insertId": 304,
+		"info": "",
+		"serverStatus": 2,
+		"warningStatus": 0
+	}
+}
+Response: 200 74.351 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 18:44:30 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "pprto447999@email.com",
+	"password": "Ky4amk@rier"
+}
+Response Body:
+{
+	"success": 1,
+	"msg": "User pprto447999@email.com has been successfully added"
+}
+Response: 200 282.903 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 18:45:12 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "pprto447999@email.com",
+	"password": "Ky4amk@rier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "pprto447999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 201.684 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 18:55:55 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "xxrto447999@email.com",
+	"password": "Ky9amk@ier"
+}
+Response Body:
+{
+	"success": 1,
+	"msg": "User xxrto447999@email.com has been successfully added"
+}
+Response: 200 419.600 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 19:42:56 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Jaylon76@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 329.279 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 19:43:49 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Presley_Purdy94@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 34.905 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 19:45:39 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Gunnar_Dickinson84@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 256.324 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 19:50:58 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Ambrose85@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 239.310 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 19:51:32 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Mariane79@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 34.030 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 19:52:10 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Merritt.Lindgren@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 34.932 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 19:56:00 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Lora95@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 221.555 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 19:57:04 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Eulalia65@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 260.628 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 19:57:18 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Taryn_Ullrich56@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 30.930 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 20:01:14 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Elizabeth_Lockman48@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 203.978 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 20:31:17 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "xxrto447999@email.com",
+	"password": "Ky9amk@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "xxrto447999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 275.084 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 20:31:24 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "xxrto447999@email.com",
+	"password": "Ky9amk@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "xxrto447999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 43.033 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 20:31:38 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "ryrto447999@email.com",
+	"password": "Ky9amk@ier"
+}
+Response Body:
+{
+	"success": 1,
+	"msg": "User ryrto447999@email.com has been successfully added"
+}
+Response: 200 69.852 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 20:32:28 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Lauriane_Wunsch@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 35.856 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 20:49:37 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Willie.Ortiz@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 212.145 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 20:50:14 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Vern_Huel36@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 33.218 ms 
+
+Request: POST /users/register at Sun Apr 09 2023 20:51:05 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Hildegard34@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 32.448 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 09:37:26 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Hermina.McKenzie@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 518.243 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 09:52:15 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "ryrto447999@email.com",
+	"password": "Ky9amk@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "ryrto447999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 252.793 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 10:03:58 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Daniella_Herzog35@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 328.771 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 10:30:56 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Clementina.Spinka@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 347.189 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 10:31:47 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Tatum.Rosenbaum@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 36.775 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 10:35:05 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Adelbert10@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 304.742 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 10:37:17 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "ryrto447999@email.com",
+	"password": "Ky9amk@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 384.155 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 10:40:38 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"password": "1234",
+	"email": "pambu76@hotmail.com"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDEwOjQwOjM4IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTM3NjM4fQ.wWE4UFCo5rgOUdWi9p4eukD5igHK0lalghJPNNAZnUY
+Response: 200 231.549 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 10:40:48 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "ryrto447999@email.com",
+	"password": "Ky9amk@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "ryrto447999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 34.172 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 10:42:31 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "email.com",
+	"password": "Ky9amk@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email.com",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 238.167 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 10:49:58 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Chaya39@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 206.143 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 10:51:47 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Reva.Lakin58@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 189.671 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:06:12 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Colleen0@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 216.067 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:36:00 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Stanford_Metz@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 278.156 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:37:48 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Glen82@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 288.673 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:38:05 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Abelardo_Fritsch4@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 33.470 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:38:45 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Taurean10@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 35.532 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:39:05 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Nico.Bins@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 32.936 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:39:41 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Rolando.Hilpert64@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 35.620 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:40:01 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Oma2@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 40.074 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:40:41 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Eileen67@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 36.867 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:42:56 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Wiley_Ziemann47@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 313.265 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:44:01 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Gerardo_Hirthe@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 190.763 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:46:43 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Louie.Monahan@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 585.061 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 11:53:16 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDExOjUzOjE2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQxOTk2fQ.Zimd0ZoYg9jecqjQeu4DHMqaM4sYF9LvYOVaDlaA1Ns
+Response: 200 238.588 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:53:16 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 32.531 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 11:53:16 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDExOjUzOjE2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQxOTk2fQ.Zimd0ZoYg9jecqjQeu4DHMqaM4sYF9LvYOVaDlaA1Ns
+Response: 200 34.824 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:53:16 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 33.451 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 11:55:42 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDExOjU1OjQyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyMTQyfQ.2Ra6Nf156bKeWhRPlxZaFS60AK837dlNpIPggkPB2UM
+Response: 200 306.023 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:55:42 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 31.648 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 11:55:42 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDExOjU1OjQyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyMTQyfQ.2Ra6Nf156bKeWhRPlxZaFS60AK837dlNpIPggkPB2UM
+Response: 200 34.108 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:55:42 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 30.849 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 11:58:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDExOjU4OjM2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyMzE2fQ.6igrVs3Zbxa3pOPKGlNRVaRFZ1uF0B8bLmMq6AptFp8
+Response: 200 204.286 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:58:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 32.319 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 11:58:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDExOjU4OjM2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyMzE2fQ.6igrVs3Zbxa3pOPKGlNRVaRFZ1uF0B8bLmMq6AptFp8
+Response: 200 30.003 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:58:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 31.469 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 11:59:43 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDExOjU5OjQzIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyMzgzfQ.ciNlZSYSWeJ74siwXgIi7D51g2lUBhdaBOkb4x49zrU
+Response: 200 224.457 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:59:43 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 34.954 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 11:59:44 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDExOjU5OjQ0IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyMzg0fQ.xgXwHnkrBvG67fxvOy9OYH3Ff2GkBmV1ck591IBWaqQ
+Response: 200 69.605 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 11:59:44 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 31.471 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 12:02:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDEyOjAyOjM2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyNTU2fQ.MOnCVaXeA-9y6cXwnf7AjdAk0OyFlQlXOam8nZpYsVw
+Response: 200 274.420 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 12:02:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 37.428 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 12:02:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDEyOjAyOjM2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyNTU2fQ.MOnCVaXeA-9y6cXwnf7AjdAk0OyFlQlXOam8nZpYsVw
+Response: 200 35.152 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 12:02:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 35.295 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 12:05:15 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDEyOjA1OjE1IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyNzE1fQ.hOVZ89JijwrnQQX2FWYkyVmmxielFiq0Vgqa_j_AsE8
+Response: 200 972.534 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 12:05:15 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 32.941 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 12:05:15 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDEyOjA1OjE1IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTQyNzE1fQ.hOVZ89JijwrnQQX2FWYkyVmmxielFiq0Vgqa_j_AsE8
+Response: 200 32.783 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 12:05:15 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "existing"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"value": "existing",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The password should be at least 8 char long, one uppercase, one lowercase
+...
+Response: 400 41.927 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 12:58:28 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Gia_OHara@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 370.089 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 13:14:17 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Flossie.Rutherford18@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 358.863 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 13:15:13 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Fiona.Pagac@gmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 94.145 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 13:30:03 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Madisen.Bergstrom96@yahoo.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 269.345 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 14:11:16 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "Jaida22@hotmail.com"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 225.385 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:07:24 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 411.835 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:07:48 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 33.995 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:08:24 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 34.014 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:12:27 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 365.284 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:25:40 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 235.817 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:27:26 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 360.007 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:29:43 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 229.970 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:30:26 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 40.358 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:30:58 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 37.312 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:33:16 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 208.098 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:34:00 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 32.043 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:35:45 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 291.063 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:37:45 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 198.391 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:42:15 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 229.336 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:43:10 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 32.831 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 15:44:52 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 186.038 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:14:26 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 501.245 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:14:38 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 34.003 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:16:53 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 233.550 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:19:52 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 762.275 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:21:07 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 690.177 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:22:10 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 243.356 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:23:09 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "User is not authorized",
+			"param": "authorization"
+		}
+	]
+}
+Response: 401 34.237 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:53:32 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjUzOjMyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMDEyfQ.QWpvpvbJ1bKJlrUeUSmYPW-rGcLFNmhO6lVKm89f6ag
+Response: 200 250.574 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:53:32 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 36.211 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:53:32 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjUzOjMyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMDEyfQ.QWpvpvbJ1bKJlrUeUSmYPW-rGcLFNmhO6lVKm89f6ag
+Response: 200 33.421 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:53:32 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 34.531 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:55:53 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjU1OjUzIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMTUzfQ.WvyrGsNQsqsE6bjRXLK-a7mLkfSe_4KAEgEhDiVelGE
+Response: 200 237.744 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:55:53 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 35.900 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:55:53 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjU1OjUzIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMTUzfQ.WvyrGsNQsqsE6bjRXLK-a7mLkfSe_4KAEgEhDiVelGE
+Response: 200 31.035 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:55:54 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 29.819 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:57:26 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjU3OjI2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMjQ2fQ.Hxk7iyrrc4c4fNkueUKjFJEvdI5ZVba2R4LUSYRz6DU
+Response: 200 250.556 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:57:26 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 32.891 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:57:26 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjU3OjI2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMjQ2fQ.Hxk7iyrrc4c4fNkueUKjFJEvdI5ZVba2R4LUSYRz6DU
+Response: 200 31.471 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:57:26 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 28.954 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:57:49 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjU3OjQ5IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMjY5fQ.sCW8Si2rQ-SqtomB96zHQXqBx_byx1pl2-a9FpFCM2s
+Response: 200 137.158 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:57:49 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 34.146 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:57:49 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjU3OjQ5IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMjY5fQ.sCW8Si2rQ-SqtomB96zHQXqBx_byx1pl2-a9FpFCM2s
+Response: 200 61.279 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:57:49 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 139.669 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:59:49 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjU5OjQ5IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMzg5fQ.QzE584Z85Q1eeqXxrMDRDmXc5SCrVd1yQdjZLd7wAbE
+Response: 200 233.424 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:59:49 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 48.277 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 16:59:50 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE2OjU5OjQ5IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwMzkwfQ.2PEBHI91HbNENAu2V5B1QO6mxfGhGFMrRcxlBMO5oYQ
+Response: 200 66.645 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 16:59:50 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 39.917 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:00:29 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjAwOjI5IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwNDI5fQ.IPDivm0aqN8x0DKDFY7yJHOUscOLXSbxnTQibbTtwF4
+Response: 200 33.760 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:00:29 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 68.999 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:00:29 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjAwOjI5IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYwNDI5fQ.IPDivm0aqN8x0DKDFY7yJHOUscOLXSbxnTQibbTtwF4
+Response: 200 30.374 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:00:29 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 30.314 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:10:58 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "email.com",
+	"password": "K9999999k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email.com",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 494.003 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:11:15 GMT-0400, IP: ::1, User Agent: PostmanRuntime/7.31.3
+Request Body:
+{
+	"firstName": "Johnsone",
+	"lastName": "Manor",
+	"email": "emailtestingtesting@t.com",
+	"password": "K9999999k@ier"
+}
+Response Body:
+{
+	"success": 1,
+	"msg": "User emailtestingtesting@t.com has been successfully added"
+}
+Response: 200 79.441 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:19:41 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjE5OjQxIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYxNTgxfQ.3n8cUtxrrdFZyc7HxJlnsx8C-RgOB2Jh8VynveKNBxw
+Response: 200 285.409 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:19:41 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 35.954 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:19:41 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjE5OjQxIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYxNTgxfQ.3n8cUtxrrdFZyc7HxJlnsx8C-RgOB2Jh8VynveKNBxw
+Response: 200 37.416 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:19:41 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 31.488 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:22:00 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjIyOjAwIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYxNzIwfQ.XvazMq8iNSbcIg3yJGQNQk003A_IXEB9SO4QrBGqPHg
+Response: 200 217.181 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:22:00 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 36.486 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:22:00 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjIyOjAwIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYxNzIwfQ.XvazMq8iNSbcIg3yJGQNQk003A_IXEB9SO4QrBGqPHg
+Response: 200 35.474 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:22:00 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 40.612 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:24:56 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjI0OjU2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYxODk2fQ.yeK5-yNbirxMAuvBqogzIv7xDmVIha9rGCPJ-bGMqwI
+Response: 200 212.997 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:24:56 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 37.669 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:24:57 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjI0OjU3IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYxODk3fQ.2-AZNFoqD97frrzIvEOhk9SuRtxCw3P5kuf6cTF026s
+Response: 200 33.096 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:24:57 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 38.916 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:28:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjI4OjM2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyMTE2fQ.pzaGfgNyAGdVdzaqwnq-E0DM9JmqOtdNNItWnJ33w_M
+Response: 200 612.773 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:28:36 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 46.272 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:28:36 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjI4OjM2IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyMTE2fQ.pzaGfgNyAGdVdzaqwnq-E0DM9JmqOtdNNItWnJ33w_M
+Response: 200 37.740 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:28:37 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 41.782 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:30:50 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjMwOjUwIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyMjUwfQ.H_g_nbbO5m-FEEMR4pD6lSAtpLwVZv2zvtzygjXiAl8
+Response: 200 218.033 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:30:50 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 49.119 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:30:50 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjMwOjUwIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyMjUwfQ.H_g_nbbO5m-FEEMR4pD6lSAtpLwVZv2zvtzygjXiAl8
+Response: 200 36.378 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:30:50 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 51.261 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:33:04 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjMzOjA0IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyMzg0fQ.NtwBZOdu-oEyp1sHGx7T9J-W4_EpjRXPlkb82RN0cwI
+Response: 200 227.332 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:33:04 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 34.866 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:34:00 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjM0OjAwIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyNDQwfQ.dLGnl4OwCvf6GK1PoMdSekhpVJjEGLBUYiuSuVA2RCg
+Response: 200 33.880 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:34:00 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 34.050 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:34:28 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjM0OjI4IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyNDY4fQ.nWMSZ-XBXYqHMHJyCi7Qin2iCdw1cjWz3epU4ytuJoU
+Response: 200 33.737 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:34:28 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 37.175 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:34:58 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjM0OjU4IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyNDk4fQ.E43zn4BRfviXftMqgivNgZQQiHJs4e5kY-pzj2aagFk
+Response: 200 35.252 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:34:58 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 31.146 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:36:55 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjM2OjU1IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyNjE1fQ.utUmNYhR8cV1O7mmfIG7SP9HArf1rJ1fKQKOFSaLDUE
+Response: 200 213.407 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:36:55 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 29.784 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:38:55 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjM4OjU1IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyNzM1fQ.22hy_K9xt_0i700ldk1uPaMtDvcwEHinqehphIVxM5c
+Response: 200 778.190 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:38:55 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 38.096 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:39:09 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjM5OjA5IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyNzQ5fQ.NpKwWynlFSe9EOlOWDPW0EL92AKWTvTo05CajD2QLXM
+Response: 200 207.655 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:39:09 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 169.076 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:39:45 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjM5OjQ1IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyNzg1fQ.FkOD6bEuBidAp4kAt9wcrQKy_-4MNXdVm5uBq6IAFlA
+Response: 200 33.544 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:39:45 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 35.462 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:40:34 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjQwOjM0IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyODM0fQ.nk5Ny-3sfzmfvy5LXwjIJo4EwikwpERrxlqPkk9Ei_s
+Response: 200 35.455 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:40:34 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 36.753 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:41:44 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjQxOjQ0IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyOTA0fQ.FTbjWVG-EMLeotI2tqEmNFdBFUC6zrzTqPEnD8tgw2M
+Response: 200 226.466 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:41:44 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 35.213 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:43:05 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjQzOjA1IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYyOTg1fQ.bM4AQnkLedqNabB9IZdNRgam76nlz8o2KOV3aU7vlXw
+Response: 200 457.284 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:43:05 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 40.665 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:45:53 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjQ1OjUzIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzMTUzfQ.yseZMoy5pph-n-phPtUA0NlyODXylzLfJaFZ9Dgq6vE
+Response: 200 216.099 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:45:53 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 36.969 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:46:58 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjQ2OjU4IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzMjE4fQ.q510QYTg1HwP2w5kD9bfH3OwjHKcCKTsEtJ3933zWhQ
+Response: 200 196.344 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:46:58 GMT-0400, IP: ::1, User Agent: -
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"msg": "First name is a required field",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "First name should be a string",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "firstName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name is a required field",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be a string",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Last name should be at least 3 characters and at most 30 characters",
+			"param": "lastName",
+			"location": "body"
+		},
+		{
+			"msg": "Email is a required field",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "password is a required field",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"msg": "The pa
+...
+Response: 400 30.871 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:47:49 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjQ3OjQ5IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzMjY5fQ.sHbOz32gdbFNR6kZCShA8NTdjzh88yZNhSlrCAeg5HU
+Response: 200 35.375 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:47:49 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Jazmin",
+	"lastName": "Hudson",
+	"email": "email_la",
+	"password": "K4950381k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email_la",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 41.873 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:48:10 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjQ4OjEwIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzMjkwfQ.M8VisFbjbjjngmP_BwNM6W6SUylXSkKmGrJtBu9XTiM
+Response: 200 32.966 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:48:10 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Bradford",
+	"lastName": "Lemke",
+	"email": "email@mail.com",
+	"password": "K6014747k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email@mail.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 34.948 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:48:10 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjQ4OjEwIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzMjkwfQ.M8VisFbjbjjngmP_BwNM6W6SUylXSkKmGrJtBu9XTiM
+Response: 200 27.459 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:48:10 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Charlene",
+	"lastName": "Ratke",
+	"email": "email_la",
+	"password": "K8614195k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email_la",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 28.156 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:51:32 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjUxOjMyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNDkyfQ.Pqe98Gq_Qf9k7IdjwsDVzfChvM-MnZKCHGKoszKY0zQ
+Response: 200 239.311 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:51:33 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Germaine",
+	"lastName": "Hettinger",
+	"email": "pambu76@hotmail.com",
+	"password": "K1790224k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "pambu76@hotmail.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 44.098 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:51:33 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjUxOjMzIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNDkzfQ._dYqJNr1VTBTrmhiho_JbAXACQ9XijOJRsHEoSFsTtg
+Response: 200 32.208 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:51:33 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Buck",
+	"lastName": "Reichert",
+	"email": "email_la",
+	"password": "K9536310k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email_la",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 29.283 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:52:02 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjUyOjAyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNTIyfQ.8J9MmM30c_c9OV-Ju4w1Y23SjZ1IFhPr3q1gndwlTz4
+Response: 200 32.887 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:52:02 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Kelsi",
+	"lastName": "Klocko",
+	"email": "emailtestingtesting@t.com",
+	"password": "K8769024k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "emailtestingtesting@t.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 51.338 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:52:02 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjUyOjAyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNTIyfQ.8J9MmM30c_c9OV-Ju4w1Y23SjZ1IFhPr3q1gndwlTz4
+Response: 200 28.020 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:52:02 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Tyson",
+	"lastName": "Abernathy",
+	"email": "email_la",
+	"password": "K2475247k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email_la",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 29.900 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:53:48 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjUzOjQ4IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNjI4fQ.lyE5RyMiemrYPHunOAGnz4jC6M33qlk_C4hX2Nq99_4
+Response: 200 318.750 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:53:48 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Rosalia",
+	"lastName": "Beahan",
+	"email": "pambu76@hotmail.com",
+	"password": "K8246758k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "pambu76@hotmail.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 32.006 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:53:48 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjUzOjQ4IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNjI4fQ.lyE5RyMiemrYPHunOAGnz4jC6M33qlk_C4hX2Nq99_4
+Response: 200 30.166 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:53:48 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Anthony",
+	"lastName": "Dietrich",
+	"email": "email_la",
+	"password": "K4751612k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email_la",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 34.913 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:55:17 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjU1OjE3IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNzE3fQ.A3o3Dw7e_SkIEHQGbuyK-SsIiQhj6xJCVgZbnjdrcio
+Response: 200 193.984 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:55:17 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Queen",
+	"lastName": "Grant",
+	"email": "ryrto447999@email.com",
+	"password": "K5752668k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "ryrto447999@email.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 46.057 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:55:17 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjU1OjE3IEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNzE3fQ.A3o3Dw7e_SkIEHQGbuyK-SsIiQhj6xJCVgZbnjdrcio
+Response: 200 34.082 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:55:17 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Isac",
+	"lastName": "Koelpin",
+	"email": "email_la",
+	"password": "K4411360k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email_la",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 32.581 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:55:41 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjU1OjQxIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNzQxfQ.qU6BZexRCoIm3uhNxA8YKYt7bK5K9ivhkTa6mb7fmkw
+Response: 200 50.621 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:55:42 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Coby",
+	"lastName": "Hammes",
+	"email": "email100@mail.com",
+	"password": "K2370634k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email100@mail.com",
+			"msg": "Email exists in our records, please try a different email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 29.619 ms 
+
+Request: POST /users/getToken at Mon Apr 10 2023 17:55:42 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"email": "pambu76@hotmail.com",
+	"password": "1234"
+}
+Response Body:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiTW9uIEFwciAxMCAyMDIzIDE3OjU1OjQyIEdNVC0wNDAwIChFYXN0ZXJuIERheWxpZ2h0IFRpbWUpIiwidXNlcm5hbWUiOiJwYW1idTc2QGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjgxMTYzNzQyfQ.U4ryvfouq11tUaTTCwdMPA8OLZHqE7KVsMOcwv4G21c
+Response: 200 30.306 ms 
+
+Request: POST /users/register at Mon Apr 10 2023 17:55:42 GMT-0400, IP: ::1, User Agent: -
+Request Body:
+{
+	"firstName": "Linnea",
+	"lastName": "Schinner",
+	"email": "email_la",
+	"password": "K9534680k@ier"
+}
+Response Body:
+{
+	"success": 0,
+	"errors": [
+		{
+			"value": "email_la",
+			"msg": "Please provide a valid email",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 52.166 ms 

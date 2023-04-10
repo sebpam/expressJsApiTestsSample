@@ -5,8 +5,8 @@
   "password": "90a2a740",
   "database": "heroku_581e0455b69468e",
   "waitForConnections": true,
-  "connectionLimit": 10,
-  "maxIdle": 10,
-  "idleTimeout": 60000, 
+  "connectionLimit": 1,
+  "maxIdle": 0,
+  "idleTimeout": 0, 
   "queueLimit": 0
 }

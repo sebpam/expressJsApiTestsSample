@@ -1,5 +1,5 @@
-module.exports = {
-  bodyError:{
+{
+  "bodyError":{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
@@ -26,7 +26,6 @@ module.exports = {
               }
             },
             "required": [
-              "value",
               "msg",
               "param",
               "location"
@@ -41,7 +40,7 @@ module.exports = {
     ]
   },
   
-  bodySuccess:{
+  "success":{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
@@ -58,7 +57,7 @@ module.exports = {
     ]
   },
 
-  headerError:{
+  "headerError":{
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {

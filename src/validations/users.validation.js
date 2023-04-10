@@ -21,6 +21,7 @@ module.exports = {
       .withMessage("Last name should be at least 3 characters and at most 30 characters"),
     body("email")
       .exists()
+      .withMessage("Email is a required field")
       .isEmail()
       .withMessage("Please provide a valid email")
       .custom(async (email) => {
@@ -40,7 +41,7 @@ module.exports = {
     body("password")
       .exists()
       .withMessage("password is a required field")
-      .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/, "i")
+      .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/, "i")
       .withMessage(
         "The password should be at least 8 char long, one uppercase, one lowercase, one special character"
       ),

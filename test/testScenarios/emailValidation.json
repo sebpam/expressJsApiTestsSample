@@ -1,0 +1,35 @@
+{
+
+	"existingEmail":{ 
+		"data": {
+			"email":"existing"
+		},
+		"errors":{
+			"type": "body",
+			"list": [
+			    {
+                    "value": "ryrto447999@email.com",
+                    "msg": "Email exists in our records, please try a different email",
+                    "param": "email",
+                    "location": "body"
+                }
+			]
+		}
+	},
+	"invalidEmail":{ 
+		"data": {
+			"email":"email_la"
+		},
+		"errors":{
+			"type": "body",
+			"list": [
+			    {
+                    "value": "email.com",
+                    "msg": "Please provide a valid email",
+                    "param": "email",
+                    "location": "body"
+                }
+			]
+		}
+	}
+}
