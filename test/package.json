@@ -4,8 +4,10 @@
   "description": "sample tests against express js based rest api's",
   "main": ".spec.js",
   "scripts": {
+    "test":"ts-node ./node_modules/mocha/bin/mocha --spec=./specs/*/*.ts",
     "test:authentication": "ts-node ./node_modules/mocha/bin/mocha --spec=./specs/authentication/*.ts",
-    "test:fieldValidation": "ts-node ./node_modules/mocha/bin/mocha --spec=./specs/fieldValidation/*.ts"
+    "test:fieldValidation": "ts-node ./node_modules/mocha/bin/mocha --spec=./specs/fieldValidation/*.ts",
+    "test:success": "ts-node ./node_modules/mocha/bin/mocha --spec=./specs/success/*.ts"
   },
   "repository": {
     "type": "git",

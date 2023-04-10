@@ -11,8 +11,7 @@ class PayloadCreation{
   
     constructor( scenario: Scenario ){
         this.scenario = scenario;
-        this.payload = {}
-	    
+        this.payload = {}   
     }
     async create(){
 		this.payload.firstName = this.scenario.data.firstName !== undefined? this.scenario.data.firstName: faker.name.firstName();
@@ -21,7 +20,6 @@ class PayloadCreation{
 		this.payload.password = this.scenario.data.password!== undefined? this.scenario.data.password: this.createPassword();
 		return this.payload;
 	}
-
 	createEmail(): string{
 		let email: string;
 		if( this.payload.firstName && this.payload.lastName ){
@@ -35,15 +33,13 @@ class PayloadCreation{
 		}
 		return email;
 	}
-
 	async getExistingEmail(){
         const qr = await ( await dbClient.runQuery(queries.getEmails(10)) );
         const email = qr[0][Math.floor( Math.random() * 10 )].emailId
         return email;
 	}
-
 	createPassword(){
-		const str = "K"+(Math.floor( Math.random() * ( 9999999 - 1000000 ) + 1000000 ))+"k@ier"
+		const str = "K"+( Math.floor( Math.random() * ( 9999999 - 1000000 ) + 1000000 ) )+"k@ier"
 		return str;
 	}
 }
