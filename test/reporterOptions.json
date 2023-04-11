@@ -1,10 +1,10 @@
 {
-    "reporterEnabled": "mochawesome",
-    "mochawesomeReporterOptions": {
-        "reportDir": "../reports",
-        "json": false,
-        "multiReport": false,
-        "inline": true,
-        "overwrite": true
-    }
+  "reporterEnabled": "mochawesome",
+  "mochawesomeReporterOptions": {
+    "reportDir": "../reports",
+    "json": false,
+    "multiReport": false,
+    "inline": true,
+    "overwrite": true
+  }
 }

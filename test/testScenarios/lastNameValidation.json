@@ -1,0 +1,74 @@
+{
+  "lastNameIsMoreThanThirtyCharacters": {
+    "data": {
+      "lastName": "thisisaverylonglastnamethathsho"
+    },
+    "errors": {
+      "type": "body",
+      "list": [
+        {
+          "value": "thisisaverylonglastnamethathsho",
+          "msg": "Last name should be at least 3 characters and at most 30 characters",
+          "param": "lastName",
+          "location": "body"
+        }
+      ]
+    }
+  },
+  "lastNameIsLessThenTwoCharactersLong": {
+    "data": {
+      "lastName": "t"
+    },
+    "errors": {
+      "type": "body",
+      "list": [
+        {
+          "value": "t",
+          "msg": "Last name should be at least 3 characters and at most 30 characters",
+          "param": "lastName",
+          "location": "body"
+        }
+      ]
+    }
+  },
+  "lastNameIsNotSetAsString": {
+    "data": {
+      "lastName": 9658
+    },
+    "errors": {
+      "type": "body",
+      "list": [
+        {
+          "value": 9658,
+          "msg": "Last name should be a string",
+          "param": "lastName",
+          "location": "body"
+        }
+      ]
+    }
+  },
+  "missingLastName": {
+    "data": {},
+    "errors": {
+      "type": "body",
+      "list": [
+        {
+          "msg": "Last name is a required field",
+          "param": "lastName",
+          "location": "body"
+        },
+        {
+          "msg": "Last name should be a string",
+          "param": "lastName",
+          "location": "body"
+        },
+        {
+          "msg": "Last name should be at least 3 characters and at most 30 characters",
+          "param": "lastName",
+          "location": "body"
+        }
+      ]
+    },
+    "delete": ["lastName"]
+  }
+}

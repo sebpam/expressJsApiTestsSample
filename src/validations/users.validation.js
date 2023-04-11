@@ -10,14 +10,14 @@ module.exports = {
       .withMessage("First name is a required field")
       .isString()
       .withMessage("First name should be a string")
-      .isLength({ min: 3, max: 30 })
-      .withMessage("Last name should be at least 3 characters and at most 30 characters"),
+      .isLength({ min: 2, max: 30 })
+      .withMessage("Firste name should be at least 3 characters and at most 30 characters"),
     body("lastName")
       .exists()
       .withMessage("Last name is a required field")
       .isString()
       .withMessage("Last name should be a string")
-      .isLength({ min: 3, max: 30 })
+      .isLength({ min: 2, max: 30 })
       .withMessage("Last name should be at least 3 characters and at most 30 characters"),
     body("email")
       .exists()

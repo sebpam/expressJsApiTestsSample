@@ -1,4 +1,4 @@
-export interface Header{
-	'content-type': string;
-	authorization?: string;
+export interface Header {
+  "content-type": string;
+  authorization?: string;
 }

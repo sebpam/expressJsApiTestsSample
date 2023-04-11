@@ -1,7 +1,7 @@
 import userCreation from "../../validations/UserCreation";
 import fs from "fs";
 const x = fs.readFileSync(
-  process.cwd() + "/testScenarios/emailValidation.json"
+  process.cwd() + "/testScenarios/lastNameValidation.json"
 );
 const scenarios = Object.assign({}, JSON.parse(x.toString()));
 for (let key in scenarios) {

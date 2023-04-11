@@ -1,0 +1,74 @@
+{
+  "firstNameIsMoreThanThirtyCharacters": {
+    "data": {
+      "firstName": "thisisaverylongfirstNamethathsho"
+    },
+    "errors": {
+      "type": "body",
+      "list": [
+        {
+          "value": "thisisaverylongfirstNamethathsho",
+          "msg": "First name should be at least 3 characters and at most 30 characters",
+          "param": "firstName",
+          "location": "body"
+        }
+      ]
+    }
+  },
+  "firstNameIsLessThenTwoCharactersLong": {
+    "data": {
+      "firstName": "t"
+    },
+    "errors": {
+      "type": "body",
+      "list": [
+        {
+          "value": "t",
+          "msg": "First name should be at least 3 characters and at most 30 characters",
+          "param": "firstName",
+          "location": "body"
+        }
+      ]
+    }
+  },
+  "firstNameIsNotSetAsString": {
+    "data": {
+      "firstName": 9658
+    },
+    "errors": {
+      "type": "body",
+      "list": [
+        {
+          "value": 9658,
+          "msg": "First name should be a string",
+          "param": "firstName",
+          "location": "body"
+        }
+      ]
+    }
+  },
+  "missingFirstName": {
+    "data": {},
+    "errors": {
+      "type": "body",
+      "list": [
+        {
+          "msg": "First name is a required field",
+          "param": "firstName",
+          "location": "body"
+        },
+        {
+          "msg": "First name should be a string",
+          "param": "firstName",
+          "location": "body"
+        },
+        {
+          "msg": "First name should be at least 3 characters and at most 30 characters",
+          "param": "firstName",
+          "location": "body"
+        }
+      ]
+    },
+    "delete": ["firstName"]
+  }
+}

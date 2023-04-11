@@ -1,4 +1,4 @@
-const rootDir = ()=>{
-	return __dirname;
-}
+const rootDir = () => {
+  return __dirname;
+};
 module.exports = rootDir;

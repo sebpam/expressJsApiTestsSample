@@ -1,9 +1,8 @@
 {
-
-	"firstSuccessfulRegistration":{ 
-		"data": {}
-	},
-	"secondSuccessfulRegistration":{ 
-		"data": {}
-	}
+  "firstSuccessfulRegistration": {
+    "data": {}
+  },
+  "secondSuccessfulRegistration": {
+    "data": {}
+  }
 }
