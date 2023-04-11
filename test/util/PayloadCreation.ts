@@ -13,7 +13,7 @@ class PayloadCreation{
         this.scenario = scenario;
         this.payload = {}   
     }
-    async create(){
+    async create(): Promise<User>{
 		this.payload.firstName = this.scenario.data.firstName !== undefined? this.scenario.data.firstName: faker.name.firstName();
 		this.payload.lastName = this.scenario.data.lastName !== undefined? this.scenario.data.lastName: faker.name.lastName();		
 		this.payload.email = this.scenario.data.email === undefined? this.createEmail(): this.scenario.data.email === "existing"? await this.getExistingEmail(): this.scenario.data.email;		
@@ -33,12 +33,12 @@ class PayloadCreation{
 		}
 		return email;
 	}
-	async getExistingEmail(){
+	async getExistingEmail(): Promise<string>{
         const qr = await ( await dbClient.runQuery(queries.getEmails(10)) );
         const email = qr[0][Math.floor( Math.random() * 10 )].emailId
         return email;
 	}
-	createPassword(){
+	createPassword(): string{
 		const str = "K"+( Math.floor( Math.random() * ( 9999999 - 1000000 ) + 1000000 ) )+"k@ier"
 		return str;
 	}
