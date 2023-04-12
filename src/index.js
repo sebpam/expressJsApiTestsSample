@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const reportRoute = require("./routes/report.route");
 const usersRoute = require("./routes/users.route");
 const morganBody = require('morgan-body');
 const swaggerJsdoc = require("swagger-jsdoc");
@@ -19,7 +18,6 @@ morganBody(app, {
   stream: log,
 });
 
-app.use("/report", reportRoute);
 app.use("/users", usersRoute);
 
 /** Swagger Initialization - START */
