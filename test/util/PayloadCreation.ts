@@ -56,7 +56,7 @@ class PayloadCreation {
     return email;
   }
   async getExistingEmail(): Promise<string> {
-    const qr = await await dbClient.runQuery(queries.getEmails(10));
+    const qr = await dbClient.runQuery(queries.getEmails(10));
     const email = qr[0][Math.floor(Math.random() * 10)].emailId;
     return email;
   }
