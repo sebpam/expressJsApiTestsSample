@@ -26,13 +26,13 @@ cd ../..
 ## App run
 ### Steps:
 
-- Assuming GitBash or VS code Bash Terminal is in use, run the command belwo to start the app in detached mode:
+- Assuming GitBash or VS code Bash Terminal is in use, run the command below to start the app in detached mode:
 ```
 cd ./src
 nohup node index.js &
 cd ..
 ```
-- Verify that the app is running by navigating to its associated swagger page: http://localhost:3000/api-docs/
+- Verify that the ExpressJs app is running by navigating to its associated swagger page: http://localhost:3000/api-docs/
 
 
 ## Tests run
@@ -47,9 +47,10 @@ cd ../..
 ## Viewing Report
 ### Steps:
 
-- Ensure no reports displayed: http://localhost:8080/report/apiTestsResults Command below can emsure that the report is cleared before tests run
+- Ensure no reports are displayed: http://localhost:8080/report/apiTestsResults 
+- Command below can ensure that the report is cleared before tests run
 ```
-node clearPreviousReport.js
+node ./test/reports/deletePreviousReport.js
 ```
 
 ```
