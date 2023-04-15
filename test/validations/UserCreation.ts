@@ -20,7 +20,7 @@ class UserCreation {
       this.header = await headerCreation.create();
       this.submissionPayload = await payloadCreation.create();
       const createUser = new ApiRestClient(
-        urls.base[ (process.env.ENV || "local") ],
+        urls.base[ (process.env.TEST_ENV || "local") ],
         urls.endpoints.registerUser,
         this.submissionPayload,
         this.header
