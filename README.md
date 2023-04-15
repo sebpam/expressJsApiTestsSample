@@ -15,6 +15,7 @@
 ## Docker
 ### Steps:
 
+- Clone repository from https://github.com/sebpam/expressJsApiTestsSample
 - From the root directory 
 
 ```
