@@ -1,5 +1,8 @@
 # Sample Rest API built with ExpressJs and associated Typescript automated tests
 
+
+-----
+
 ## Installation
 ### Prerequisites:
 
@@ -18,10 +21,11 @@ cd ./src
 npm install
 cd ../test
 npm install
-cd ./reports
-npm install
-cd ../..
+cd ..
 ```
+
+
+-----
 
 ## App run
 ### Steps:
@@ -34,6 +38,7 @@ cd ..
 ```
 - Verify that the ExpressJs app is running by navigating to its associated swagger page: http://localhost:3000/api-docs/
 
+-----
 
 ## Tests run
 ### Steps:
@@ -41,24 +46,37 @@ cd ..
 ```
 cd ./test
 npm run test
-cd ../..
+cd ..
 ```
 
+-----
 ## Viewing Report
 ### Steps:
 
 - Ensure no reports are displayed: http://localhost:8080/report/apiTestsResults 
 - Command below can ensure that the report is cleared before tests run
 ```
-node ./test/reports/deletePreviousReport.js
+node deletePreviousReport.js
 ```
 
 ```
-cd ./test/reports
-nohup node index.js &
+nohup node ./test/index.js &
 ```
 - Navigate to http://localhost:8080/report/apiTestsResults
 - A validation bug has been left in place to demo test failures
 
+
+-----
+-----
+
 ## Docker
-### Steps: 
+### Steps:
+
+- From the root of the directory 
+
+```
+docker compose build
+docker compose up
+```
+
+- Report should be viewable @ http://localhost:8080/report/apiTestsResults
