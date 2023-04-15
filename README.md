@@ -23,6 +23,7 @@ docker compose build
 docker compose up
 ```
 
+- Swagger page for mock api @ http://localhost:3000/api-docs/
 - Reports are viewable @ http://localhost:8080/report/apiTestsResults
 -----
 
