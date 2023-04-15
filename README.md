@@ -1,7 +1,6 @@
 # Sample Rest API built with ExpressJs and associated Typescript automated tests
 
 
------
 
 ## Installation
 ### Prerequisites:
@@ -10,6 +9,28 @@
 - Installation of docker https://www.docker.com/
 - Installation of VScode https://code.visualstudio.com/ or Git https://git-scm.com/downloads
 
+
+-----
+
+## Docker
+### Steps:
+
+- From the root of the directory 
+
+```
+docker compose build
+docker compose up
+```
+
+- Reports are viewable @ http://localhost:8080/report/apiTestsResults
+-----
+
+
+
+-----
+-----
+
+## Local host
 ### Steps:
 - Clone repository from https://github.com/sebpam/expressJsApiTestsSample
 - Run the following commands sequentially:
@@ -67,16 +88,3 @@ nohup node ./test/index.js &
 
 
 -----
------
-
-## Docker
-### Steps:
-
-- From the root of the directory 
-
-```
-docker compose build
-docker compose up
-```
-
-- Report should be viewable @ http://localhost:8080/report/apiTestsResults
