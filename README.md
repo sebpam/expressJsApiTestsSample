@@ -15,7 +15,7 @@
 ## Docker
 ### Steps:
 
-- From the root of the directory 
+- From the root directory 
 
 ```
 docker compose build
