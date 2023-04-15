@@ -1,5 +1,7 @@
 # Sample Rest API built with ExpressJs and associated Typescript automated tests
 
+
+
 ## Installation
 ### Prerequisites:
 
@@ -7,6 +9,30 @@
 - Installation of docker https://www.docker.com/
 - Installation of VScode https://code.visualstudio.com/ or Git https://git-scm.com/downloads
 
+
+-----
+
+## Docker
+### Steps:
+
+- Clone repository from https://github.com/sebpam/expressJsApiTestsSample
+- From the root directory 
+
+```
+docker compose build
+docker compose up
+```
+
+- Swagger page for mock api @ http://localhost:3000/api-docs/
+- Reports are viewable @ http://localhost:8080/report/apiTestsResults
+-----
+
+
+
+-----
+-----
+
+## Local host
 ### Steps:
 - Clone repository from https://github.com/sebpam/expressJsApiTestsSample
 - Run the following commands sequentially:
@@ -18,10 +44,11 @@ cd ./src
 npm install
 cd ../test
 npm install
-cd ./reports
-npm install
-cd ../..
+cd ..
 ```
+
+
+-----
 
 ## App run
 ### Steps:
@@ -34,6 +61,7 @@ cd ..
 ```
 - Verify that the ExpressJs app is running by navigating to its associated swagger page: http://localhost:3000/api-docs/
 
+-----
 
 ## Tests run
 ### Steps:
@@ -41,24 +69,24 @@ cd ..
 ```
 cd ./test
 npm run test
-cd ../..
+cd ..
 ```
 
+-----
 ## Viewing Report
 ### Steps:
 
 - Ensure no reports are displayed: http://localhost:8080/report/apiTestsResults 
 - Command below can ensure that the report is cleared before tests run
 ```
-node ./test/reports/deletePreviousReport.js
+node deletePreviousReport.js
 ```
 
 ```
-cd ./test/reports
-nohup node index.js &
+nohup node ./test/index.js &
 ```
 - Navigate to http://localhost:8080/report/apiTestsResults
 - A validation bug has been left in place to demo test failures
 
-## Docker
-### Steps: 
+
+-----
