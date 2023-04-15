@@ -10,8 +10,6 @@ RUN npm i -g mocha
 RUN npm i -g ts-node
 RUN npm ci
 
-RUN node deletePreviousReport.js
-
 ENV TEST_ENV=docker
 
 EXPOSE 8080
