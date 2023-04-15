@@ -12,7 +12,7 @@ class HeaderCreation {
   }
   async create(): Promise<Header> {
     const create = new ApiRestClient(
-      urls.base[ (process.env.ENV || "local") ],
+      urls.base,
       urls.endpoints.token,
       { email: "pambu76@hotmail.com", password: "1234" },
       this.header

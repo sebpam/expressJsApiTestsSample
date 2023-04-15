@@ -40,5 +40,5 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 /** Swagger Initialization - END */
 
 app.listen(3000, () => {
-  console.log("ExpressJs Rest API App has started");
+  console.log("App has started");
 });
