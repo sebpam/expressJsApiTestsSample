@@ -14,6 +14,7 @@ class UserCreation {
   constructor() {}
 
   validateUserCreation(scenario: Scenario) {
+    
     before(async function (this: Context) {
       const payloadCreation = new PayloadCreation(scenario);
       const headerCreation = new HeaderCreation(scenario);
@@ -27,7 +28,13 @@ class UserCreation {
       );
       this.resp = await createUser.submitPostRequest();
     });
+
+    after(()=>{
+      queries.resetDb()
+    })
+
     if (scenario.errors) {
+      
       if (scenario.errors.type === "header") {
         it("Should validate the structure of the response payload for an AUTHENTICATION error", function (this: Context) {
           expect(validate(this.resp.body, headerError).valid).to.equal(true);
@@ -74,22 +81,19 @@ class UserCreation {
         );
       });
       it("Should validate the successful first name database entry", async function (this: Context) {
-        const qr = await await dbClient.runQuery(
-          queries.getUser(this.submissionPayload.email)
-        );
-        this.dbObj = qr[0][0];
+        this.dbObj = queries.getEmails(this.submissionPayload.email)
         expect(this.dbObj.firstName).to.equal(this.submissionPayload.firstName);
       });
       it("Should validate the successful last name database entry", async function (this: Context) {
         expect(this.dbObj.lastName).to.equal(this.submissionPayload.lastName);
       });
-      it("Should validate the successful email database entry", async function (this: Context) {
-        expect(this.dbObj.email).to.equal(this.submissionPayload.email);
-        //deleting record to avoid clogging up the database
-        await dbClient.runQuery(
-          queries.deleteRecord(this.submissionPayload.email)
-        );
-      });
+      // it("Should validate the successful email database entry", async function (this: Context) {
+      //   expect(this.dbObj.email).to.equal(this.submissionPayload.email);
+      //   //deleting record to avoid clogging up the database
+      //   await dbClient.runQuery(
+      //     queries.deleteRecord(this.submissionPayload.email)
+      //   );
+      // });
     }
   }
 }

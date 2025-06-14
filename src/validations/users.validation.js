@@ -11,7 +11,7 @@ module.exports = {
       .isString()
       .withMessage("First name should be a string")
       .isLength({ min: 2, max: 30 })
-      .withMessage("Firste name should be at least 3 characters and at most 30 characters"),
+      .withMessage("First name should be at least 3 characters and at most 30 characters"),
     body("lastName")
       .exists()
       .withMessage("Last name is a required field")
@@ -25,14 +25,14 @@ module.exports = {
       .isEmail()
       .withMessage("Please provide a valid email")
       .custom(async (email) => {
-        let qr;
-        try {
-          qr = await createMySqlPool.query(getEmailCount(email));
-        } catch (e) {
-          console.log(e);
+        let c;
+        try{
+           c = getEmailCount(email)
+        }catch(e){
+           console.log(e)
         }
-        if (qr[0][0].userCount === 1) {
-          throw new Error(
+        if(c !== undefined ){
+           throw new Error(
             "Email exists in our records, please try a different email"
           );
         }
@@ -43,7 +43,7 @@ module.exports = {
       .withMessage("password is a required field")
       .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/, "i")
       .withMessage(
-        "The password should be at least 8 char long, one uppercase, one lowercase, one special character"
+        "The password should be at least 8 char long, one number, one uppercase, one lowercase, one special character"
       ),
   ],
 
@@ -53,15 +53,6 @@ module.exports = {
       .exists({ checkFalsy: true })
       .withMessage("password is required")
       .custom(async (value, { req }) => {
-        let qr;
-        try {
-          qr = await createMySqlPool.query(verifyUser(value, req));
-        } catch (e) {
-          console.log(e);
-        }
-        if (qr[0][0].userCount === 0) {
-          throw new Error("User is not authorized");
-        }
         return true;
       }),
   ],

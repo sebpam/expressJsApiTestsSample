@@ -56,8 +56,11 @@ class PayloadCreation {
     return email;
   }
   async getExistingEmail(): Promise<string> {
-    const qr = await dbClient.runQuery(queries.getEmails(10));
-    const email = qr[0][Math.floor(Math.random() * 10)].emailId;
+    // const qr = await dbClient.runQuery(queries.getEmails(10));
+    // const email = qr[0][Math.floor(Math.random() * 10)].emailId;
+    // return email;
+    const list = queries.getEmails();
+    const email = list[Math.floor(Math.random() * list.length)].email;
     return email;
   }
   createPassword(): string {
