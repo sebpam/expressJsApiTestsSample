@@ -14,7 +14,7 @@ class HeaderCreation {
     const create = new ApiRestClient(
       urls.base[ (process.env.TEST_ENV || "local") ],
       urls.endpoints.token,
-      { email: "pambu76@hotmail.com", password: "1234" },
+      { email: "email@email.com", password: "Test@1234" },
       this.header
     );
     this.header.authorization = this.scenario.authorization

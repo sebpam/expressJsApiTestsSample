@@ -31,7 +31,7 @@ module.exports = {
        return users
     }else{
       userObj = users.find((element) => element.email === email)
-      console.log(userObj)
+
       if( userObj === undefined ){
         return {message:'No match has been found for the email provided'}
       };

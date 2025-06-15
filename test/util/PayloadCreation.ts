@@ -2,7 +2,7 @@ import { Scenario } from "../interfaces/Scenario";
 import { User } from "../interfaces/User";
 import { faker } from "@faker-js/faker";
 import dbClient from "../util/dbClient";
-import queries from "../util/queries";
+//import queries from "../util/queries";
 
 class PayloadCreation {
   private payload: User;

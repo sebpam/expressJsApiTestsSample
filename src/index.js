@@ -24,7 +24,7 @@ app.use("/users", usersRoute);
 const swaggerOption = {
   swaggerDefinition: (swaggerJsdoc.Options = {
     info: {
-      title: "ExpressJs Api Simple Mock example with Mocha Tests",
+      title: "Simple Mock API example build with ExpressJs and Text file as DB",
       description: "API documentation",
       contact: {
         name: "Sebastien G Pambu",

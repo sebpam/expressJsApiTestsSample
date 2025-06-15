@@ -1,4 +1,4 @@
-const { createUser, resetDb, getEmailCount } = require("../util/queries");
+const { createUser, resetDb, getEmailCount } = require("../db/queries");
 const { secret } = require("../config/jwtSecretKey");
 const jwt = require("jsonwebtoken");
 const fs = require("fs")

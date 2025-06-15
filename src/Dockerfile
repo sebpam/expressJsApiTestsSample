@@ -1,8 +1,8 @@
 FROM node:18.16.0
 
-WORKDIR /app
+WORKDIR /src
 
-COPY ./src /app
+COPY ./src /src
 
 RUN npm install
 

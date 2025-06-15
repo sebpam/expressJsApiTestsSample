@@ -1,6 +1,6 @@
 const { body, header, query } = require("express-validator");
-const { createMySqlPool } = require("../util/dbClient");
-const { getEmailCount, verifyUser } = require("../util/queries");
+//const { createMySqlPool } = require("../util/dbClient");
+const { getEmailCount, verifyUser } = require("../db/queries");
 const jwt = require("jsonwebtoken");
 const jwtSecretKey = "abcd96587";
 module.exports = {
