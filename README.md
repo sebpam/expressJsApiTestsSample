@@ -1,6 +1,4 @@
-# Sample Rest API built with ExpressJs and associated Typescript automated tests
-
-
+# Sample Rest API built with ExpressJs and associated Mocha Tests
 
 ## Installation
 ### Prerequisites:
@@ -26,20 +24,19 @@ docker compose up
 - Reports are viewable @ http://localhost:8080/report/apiTestsResults
 -----
 
-
 -----
 -----
 
-## Local host
+## No Docker
 ### Steps:
 - Clone repository from https://github.com/sebpam/expressJsApiTestsSample
-- From GitBash, Run the following command:
+- From GitBash or VS Code Bach terminal option, Run the following command:
 
 ```
 localSetup.sh
 ```
-- Verify that the ExpressJs app is running by navigating to its associated swagger page: http://localhost:3000/api-docs/
-- Navigate to http://localhost:8080/report/apiTestsResults to see The mocha tests report
+- Swagger page for mock api @ http://localhost:3000/api-docs/
+- Reports are viewable @ http://localhost:8080/report/apiTestsResults
 
 
 -----
