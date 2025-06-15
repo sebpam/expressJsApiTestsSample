@@ -24,18 +24,20 @@ app.use("/users", usersRoute);
 const swaggerOption = {
   swaggerDefinition: (swaggerJsdoc.Options = {
     info: {
-      title: "expressJs Api Tests Sample",
+      title: "ExpressJs Api Simple Mock example with Mocha Tests",
       description: "API documentation",
       contact: {
-        name: "Sebastien",
+        name: "Sebastien G Pambu",
       },
       servers: ["http://localhost:3000/"],
     },
   }),
   apis: ["index.js", "./routes/*.js"],
+
 };
 
 const swaggerDocs = swaggerJsdoc(swaggerOption);
+
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 /** Swagger Initialization - END */
 

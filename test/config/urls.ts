@@ -5,6 +5,8 @@ export default {
   },
   endpoints: {
     registerUser: "/users/register",
-    token: "/users/getToken"
+    token: "/users/getToken",
+    delete: "/users/reset",
+    existingUser: "/users/existingUser?"
   },
 };

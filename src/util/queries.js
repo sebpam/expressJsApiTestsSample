@@ -19,13 +19,29 @@ module.exports = {
 
   getEmailCount: (email)=>{
     let users = [] 
+    let userObj;
     let x = ( fs.readFileSync('../src/db/users.txt', 'utf-8') ).split('|')
     for(const user of x){
       if(user !== ''){
         users.push(JSON.parse(user))
       }
     }
-    return users.find((element) => element.email === email);
 
+    if(email=== undefined){
+       return users
+    }else{
+      userObj = users.find((element) => element.email === email)
+      console.log(userObj)
+      if( userObj === undefined ){
+        return {message:'No match has been found for the email provided'}
+      };
+      return userObj
+    }
+    
+  },
+
+  resetDb: ()=>{
+    fs.writeFileSync('../src/db/users.txt', '{"firstName": "masteruserfirst","LastName": "masteruserlast","email": "email@email.com","password": "Test@1234"}|')
+    return {'success': 1, 'message':'The text file has been reset to master user'}
   }
 };

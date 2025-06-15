@@ -35,6 +35,36 @@ class ApiRestClient {
         });
     });
   }
+
+  public deleteRequest(): any {
+    return new Promise((resolve, reject) => {
+      request(this.baseUrl)
+        .delete(this.endpoint)
+        .set(this.header)
+        .end((err, resp) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(resp);
+          }
+        });
+    });
+  }
+  public submGetRequest(): any {
+    return new Promise((resolve, reject) => {
+      console.log( this.baseUrl + this.endpoint )
+      request(this.baseUrl)
+        .get(this.endpoint)
+        .set(this.header)
+        .end((err, resp) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(resp);
+          }
+        });
+    });
+  }
 }
 
 export default ApiRestClient;

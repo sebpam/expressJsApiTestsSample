@@ -25,7 +25,7 @@ class PayloadCreation {
       this.scenario.data.email === undefined
         ? this.createEmail()
         : this.scenario.data.email === "existing"
-        ? await this.getExistingEmail()
+        ? "email@email.com"
         : this.scenario.data.email;
     this.payload.password =
       this.scenario.data.password !== undefined
@@ -53,14 +53,6 @@ class PayloadCreation {
     } else {
       email = faker.internet.email();
     }
-    return email;
-  }
-  async getExistingEmail(): Promise<string> {
-    // const qr = await dbClient.runQuery(queries.getEmails(10));
-    // const email = qr[0][Math.floor(Math.random() * 10)].emailId;
-    // return email;
-    const list = queries.getEmails();
-    const email = list[Math.floor(Math.random() * list.length)].email;
     return email;
   }
   createPassword(): string {

@@ -1,9 +1,12 @@
-const { body, header } = require("express-validator");
+const { body, header, query } = require("express-validator");
 const { createMySqlPool } = require("../util/dbClient");
 const { getEmailCount, verifyUser } = require("../util/queries");
 const jwt = require("jsonwebtoken");
 const jwtSecretKey = "abcd96587";
 module.exports = {
+  validationGetResult:[
+    query("email").isString().withMessage("Please provide an email address")
+  ],
   validateInputs: [
     body("firstName")
       .exists({ checkFalsy: true })
@@ -28,10 +31,11 @@ module.exports = {
         let c;
         try{
            c = getEmailCount(email)
+           console.log(c)
         }catch(e){
            console.log(e)
         }
-        if(c !== undefined ){
+        if(c.firstName !== undefined ){
            throw new Error(
             "Email exists in our records, please try a different email"
           );
@@ -55,5 +59,5 @@ module.exports = {
       .custom(async (value, { req }) => {
         return true;
       }),
-  ],
+  ]
 };

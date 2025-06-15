@@ -27,9 +27,6 @@ export default {
     }
     return emails
 
-  },
-  resetDb: ()=>{
-    fs.writeFileSync('../src/db/users.txt', '{"firstName": "masteruserfirst","LastName": "masteruserlast","email": "email@email.com","password": "Test@1234"}|')
   }
 
 };

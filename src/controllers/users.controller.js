@@ -1,4 +1,4 @@
-const { register, getToken } = require("../services/users.service");
+const { register, getToken, reset, existingUser, existingUserList } = require("../services/users.service");
 const { validationResult } = require("express-validator");
 const { verifyToken } = require("../authentication/users.authentication");
 
@@ -6,9 +6,6 @@ const express = require("express");
 const router = express.Router();
 module.exports = {
   register: async (req, res) => {
-    if (!verifyToken(req)) {
-      res.status(401).json({ success: 0, errors: [ { "msg": "User is not authorized", "param":"authorization" } ]});
-    } else {
       try {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
@@ -29,7 +26,6 @@ module.exports = {
       } catch (e) {
         console.log(e);
       }
-    }
   },
   getToken: async (req, res) => {
     try {
@@ -49,4 +45,30 @@ module.exports = {
       console.log(e);
     }
   },
+
+  reset: async (req, res) => {
+      const result = await reset();
+      res.status(200).send(result);
+  },
+
+  existingUser: async (req, res) => {
+      try {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+          res.status(400).json({ success: 0, errors: errors.array() });
+        } else {       
+          const queryResult = existingUser(req.query.email);    
+          res.status(200).json(queryResult);
+        }
+      } catch (e) {
+        console.log(e);
+      }
+    
+  },
+
+  existingUserList: async (req, res) => {
+      const result = await existingUserList();
+      res.status(200).send(result);
+  }
+
 };

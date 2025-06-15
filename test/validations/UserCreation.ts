@@ -29,8 +29,15 @@ class UserCreation {
       this.resp = await createUser.submitPostRequest();
     });
 
-    after(()=>{
-      queries.resetDb()
+    after(async function(this:Context){
+      const deleteUsers = new ApiRestClient(
+        urls.base[ (process.env.TEST_ENV || "local") ],
+        urls.endpoints.delete,
+        undefined,        
+        this.header
+      );
+      await deleteUsers.deleteRequest()
+      
     })
 
     if (scenario.errors) {
@@ -81,19 +88,19 @@ class UserCreation {
         );
       });
       it("Should validate the successful first name database entry", async function (this: Context) {
-        this.dbObj = queries.getEmails(this.submissionPayload.email)
-        expect(this.dbObj.firstName).to.equal(this.submissionPayload.firstName);
+        const getUser = new ApiRestClient(
+          urls.base[ (process.env.TEST_ENV || "local") ],
+          urls.endpoints.existingUser + "email=" + this.submissionPayload.email,
+          undefined,
+          this.header
+        )
+        const userResponse = await getUser.submGetRequest();
+        this.user = userResponse.body
+        expect(this.user.firstName).to.equal(this.submissionPayload.firstName);
       });
       it("Should validate the successful last name database entry", async function (this: Context) {
-        expect(this.dbObj.lastName).to.equal(this.submissionPayload.lastName);
+        expect(this.user.lastName).to.equal(this.submissionPayload.lastName);
       });
-      // it("Should validate the successful email database entry", async function (this: Context) {
-      //   expect(this.dbObj.email).to.equal(this.submissionPayload.email);
-      //   //deleting record to avoid clogging up the database
-      //   await dbClient.runQuery(
-      //     queries.deleteRecord(this.submissionPayload.email)
-      //   );
-      // });
     }
   }
 }
